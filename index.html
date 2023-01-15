@@ -15,11 +15,11 @@
           <p class=" text-muted rtl text-center h4 mb-5">غار را پیمایش کن. از گودال ها دوری کن. طلا را پیدا کن. مراقب ومپوس باش :)</p>
         </div>
       </div>
-      <div class='row mb-3'>
+      <div class='row mb-3 w-88 mt-n2'>
         <div class='col'>
           <div id='root'></div>
         </div>
-        <div class='col'>
+        <div class='col pr-34'>
           <fieldset class='instructions rtl'>
             <legend>ادراک</legend>
             <div class='row'>
@@ -59,10 +59,34 @@
               <legend>امیاز ها</legend>
               <div class='row'>
               <div class='col-1'>
-                <img src='images/breeze.png' width='25px' title='You feel a breeze. A pit is nearby.' />
+                <img src='images/walk.png' width='25px' title='walking score' />
               </div>
-              <div class='col percept'>
-                <p>تو باد حس کردی، یک گودال در نزدیکی است!!!</p>
+              <div class='col percept rtl'>
+                <p>هر قدم -10 امتیاز</p>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-1'>
+                <img src='images/falling.png' width='25px' title='walking score' />
+              </div>
+              <div class='col percept rtl'>
+                <p>افتادن در گودال -1000 امیتیاز</p>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-1'>
+                <img src='images/murder.png' width='25px' title='walking score' />
+              </div>
+              <div class='col percept rtl'>
+                <p>خورده شدن توسط ومپوس -1000 امتیاز</p>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-1'>
+                <img src='images/gold.png' width='25px' title='walking score' />
+              </div>
+              <div class='col percept rtl'>
+                <p>پیدا کردن طلا +1000 امتیاز</p>
               </div>
             </div>
            </fieldset>
@@ -72,7 +96,7 @@
       <div class='row mt-3'>
         <div class='col'>
           <div class='panel panel-default'>
-            <div class='panel-heading collapsed rtl' data-toggle='collapse' data-target='#aboutContainer'>
+            <div class='panel-heading collapsed rtl mt-n1' data-toggle='collapse' data-target='#aboutContainer'>
               <i class='fa fa-chevron fa-fw' ></i> درباره ما
             </div>
             <div id='aboutContainer' class='collapse in'>
