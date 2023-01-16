@@ -55,13 +55,13 @@ const AiManager = {
       // Choose the next move.
       AiManager.recommendedMove = AiManager.move(x, y);
 
-      if (AiManager.recommendedMove.knowledge.visited > 1) {
-        !AiManager.foundLoop && console.log("Risky business!");
-        AiManager.foundLoop = true;
-      } else if (!AiManager.recommendedMove.knowledge.visited) {
-        AiManager.foundLoop && console.log("Playing it safe.");
-        AiManager.foundLoop = false;
-      }
+      // if (AiManager.recommendedMove.knowledge.visited > 1) {
+      //   !AiManager.foundLoop && console.log("Risky business!");
+      //   AiManager.foundLoop = true;
+      // } else if (!AiManager.recommendedMove.knowledge.visited) {
+      //   AiManager.foundLoop && console.log("Playing it safe.");
+      //   AiManager.foundLoop = false;
+      // }
 
       return AiManager.recommendedMove;
     }
